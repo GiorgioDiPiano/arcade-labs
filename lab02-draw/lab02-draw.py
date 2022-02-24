@@ -7,17 +7,16 @@ arcade.start_render()
 # Dibuja el sol
 arcade.draw_circle_filled(600, 500, 70, arcade.color.YELLOW)
 # Dibuja 2 arcos blancos
-arcade. draw_arc_outline(200, 500, 90, 100, arcade.color.WHITE, 0, 90)
-arcade. draw_arc_outline(290, 500, -90, 100, arcade.color.WHITE, 0, 90)
+arcade. draw_arc_outline(200, 500, 90, 100, arcade.color.BLACK, 0, 90)
+arcade. draw_arc_outline(290, 500, -90, 100, arcade.color.BLACK, 0, 90)
+arcade. draw_arc_outline(100, 400, 90, 80, arcade.color.BLACK, 0, 85)
+arcade. draw_arc_outline(190, 400, -90, 80, arcade.color.BLACK, 0, 85)
 
-arcade. draw_arc_outline(100, 400, 90, 80, arcade.color.WHITE, 0, 85)
-arcade. draw_arc_outline(190, 400, -90, 80, arcade.color.WHITE, 0, 85)
+arcade. draw_arc_outline(60, 480, 90, 60, arcade.color.BLACK, 0, 90)
+arcade. draw_arc_outline(150, 480, -90, 60, arcade.color.BLACK, 0, 90)
 
-arcade. draw_arc_outline(60, 480, 90, 60, arcade.color.WHITE, 0, 90)
-arcade. draw_arc_outline(150, 480, -90, 60, arcade.color.WHITE, 0, 90)
-
-arcade. draw_arc_outline(300,440,90,100,arcade.color.WHITE,0,100)
-arcade. draw_arc_outline(390,440,-90,100,arcade.color.WHITE,0,100)
+arcade. draw_arc_outline(300,440,90,100,arcade.color.BLACK,0,100)
+arcade. draw_arc_outline(390,440,-90,100,arcade.color.BLACK,0,100)
 
 # Dibuja el mar
 arcade.draw_lrtb_rectangle_filled(0,800,330,0,arcade.color.BLUE_SAPPHIRE)
@@ -49,6 +48,10 @@ arcade.draw_rectangle_filled(368,180,10,15, arcade.color.SANDY_TAUPE)
 arcade.draw_triangle_filled(165,220,165,200,130,210,arcade.color.RED)
 arcade.draw_triangle_filled(255,220,255,200,220,210,arcade.color.RED)
 arcade.draw_triangle_filled(345,220,345,200,310,210,arcade.color.RED)
+# Dibuja una aleta de tiburon
+arcade.draw_arc_filled(100,280,90,80,arcade.color.ALICE_BLUE,0,110)
+arcade.draw_circle_filled(86,290,26,arcade.color.BLUE_SAPPHIRE)
+
 
 arcade.finish_render()
 arcade.run()
